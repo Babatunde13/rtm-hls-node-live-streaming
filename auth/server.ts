@@ -16,7 +16,6 @@ app.get("/", (_, res) => {
 
 app.post("/auth", (req, res) => {
     const streamKey = req.body.key;
-    console.log(streamKey);
 
     if (streamKey === STREAM_KEY) {
         res.send("OK");
